@@ -16,7 +16,7 @@
             set
             {
                 Name = value;
-                if (string.IsNullOrEmpty(Name))
+                if (string.IsNullOrEmpty(Name) || Name == " ")
                 {
                     Console.WriteLine("You can't leave this field empty, Please enter your name .....");
                      string name = Console.ReadLine();
