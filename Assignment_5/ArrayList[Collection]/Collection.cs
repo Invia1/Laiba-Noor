@@ -148,12 +148,12 @@ namespace Assignment_5_
 
             Console.ForegroundColor = ConsoleColor.DarkCyan;
 
-            Console.WriteLine("Press 1 for adding novels in the list..");
-            Console.WriteLine("Press 2 for updating novels in the list..");
-            Console.WriteLine("Press 3 for inserting novels in the list..");
-            Console.WriteLine("Press 4 for searching novels in the list..");
-            Console.WriteLine("Press 5 for removing novels in the list..");
-            Console.WriteLine("Press 6 for exit the program..");
+            Console.WriteLine("Press 1 for Adding novels in the list..");
+            Console.WriteLine("Press 2 for Updating novels in the list..");
+            Console.WriteLine("Press 3 for Inserting novels in the list..");
+            Console.WriteLine("Press 4 for Searching novels in the list..");
+            Console.WriteLine("Press 5 for Removing novels in the list..");
+            Console.WriteLine("Press 6 for Exit the program..");
 
             int num = int.Parse(Console.ReadLine());
 
