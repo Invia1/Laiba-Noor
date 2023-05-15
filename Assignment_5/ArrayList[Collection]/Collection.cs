@@ -33,7 +33,7 @@ namespace Assignment_5_
         public void AddNovel()
         {
             IterateList();
-            Console.WriteLine("\nEnter the number of novels you want add : ");
+            Console.WriteLine("\nEnter the number of novels you want to add : ");
             int num = int.Parse(Console.ReadLine());
             Console.WriteLine("\nEnter the novel you want to add in list : ");
 
@@ -61,9 +61,9 @@ namespace Assignment_5_
 
             for (int i = 0; i < total; i++)
             {
-                Console.WriteLine("\nEnter the index number where you want update novel : ");
+                Console.WriteLine("\nEnter the index number where you want to update novel : ");
                 int num = int.Parse(Console.ReadLine());
-                Console.WriteLine("\nEnter the novel you want to add in list : ");
+                Console.WriteLine("\nEnter the novel name you want to update in list : ");
                 string novel = Console.ReadLine();
                 NovelList[num] = novel;
             }
@@ -87,7 +87,7 @@ namespace Assignment_5_
             {
                 Console.WriteLine("\nEnter the index number where you want insert novel : ");
                 int num = int.Parse(Console.ReadLine());
-                Console.WriteLine("\nEnter the novel you want to add in list : ");
+                Console.WriteLine("\nEnter the novel name you want to insert in list : ");
                 NovelList.Insert(num, Console.ReadLine());
             }
             Console.ForegroundColor = ConsoleColor.DarkCyan;
