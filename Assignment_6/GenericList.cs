@@ -63,7 +63,7 @@ namespace Assignment_6_
                 Console.Write("Enter the updated Id : ");
                 employementId[index] = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("\n-------List of EmployeeIds After Updating Ids-------\n");
+            Console.WriteLine("\n-------List of EmployeesId After Updating Ids-------\n");
             foreach (var empId in employementId)
             {
                 Console.WriteLine("=> " + empId);
@@ -82,7 +82,7 @@ namespace Assignment_6_
                 Console.Write("Enter the Ids you want to insert in the list : ");
                 employementId.Insert(index, int.Parse(Console.ReadLine()));
             }
-            Console.WriteLine("\n-------List of EmployeeIds After Inserting Ids-------\n");
+            Console.WriteLine("\n-------List of EmployeesIds After Inserting Ids-------\n");
             foreach (var empId in employementId)
             {
                 Console.WriteLine("=> " + empId);
@@ -113,7 +113,7 @@ namespace Assignment_6_
                 Console.Write("Enter the Ids you want to remove : ");
                 employementId.Remove(int.Parse(Console.ReadLine()));
             }
-            Console.WriteLine("\n-------List of EmployeeIds After Removing Ids-------\n");
+            Console.WriteLine("\n-------List of EmployeesId After Removing Ids-------\n");
             foreach (var empId in employementId)
             {
                 Console.WriteLine("=> " + empId);
