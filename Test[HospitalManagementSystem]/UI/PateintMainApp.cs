@@ -127,20 +127,20 @@ namespace HospitalManagementSystem.UI
                             
 
                             Console.WriteLine("Enter Which Speciality Patient Want To Be Consulted : ");
-                            string? specialityCon = Console.ReadLine();
-                            if (string.IsNullOrEmpty(specialityCon))
+                            obj.SpecialityToBeConsulted = Console.ReadLine();
+                            if (string.IsNullOrEmpty(obj.SpecialityToBeConsulted))
                             {
                                 Console.WriteLine("Please Enter Correct Speciality: ");
-                                specialityCon = Console.ReadLine();
+                                obj.SpecialityToBeConsulted = Console.ReadLine();
                                 continue;
                             }
-                            foreach (char item in specialityCon)
+                            foreach (char item in obj.SpecialityToBeConsulted)
                             {
                                 if (char.IsDigit(item))
                                 {
                                     Console.WriteLine("Digits are not allowed...");
                                     Console.WriteLine("Please Enter Correct Speciality: ");
-                                    specialityCon = Console.ReadLine();
+                                    obj.SpecialityToBeConsulted = Console.ReadLine();
                                     break;
                                 }
                             }
