@@ -11,7 +11,7 @@ namespace HospitalManagementSystem.UI
         {
             bool RUN = true;
             int choice;
-            Patient obj = new Patient();
+            Patient obj;
             PatientDetails pd = new PatientDetails();
 
             while(RUN)
@@ -28,6 +28,7 @@ namespace HospitalManagementSystem.UI
                     switch (choice) 
                     {
                         case 1:
+                        obj = new Patient();
                             Console.WriteLine("Enter Patient Registration ID : ");
                             obj.PatientRegId = Convert.ToInt32(Console.ReadLine());
 
