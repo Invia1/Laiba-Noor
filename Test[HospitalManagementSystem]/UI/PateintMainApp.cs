@@ -38,7 +38,6 @@ namespace HospitalManagementSystem.UI
                             {
                                 Console.WriteLine("Please Enter Correct First Name: ");
                                 obj.FirstName = Console.ReadLine();
-                                continue;
                             }
                             foreach (char item in obj.FirstName)
                             {
@@ -57,7 +56,6 @@ namespace HospitalManagementSystem.UI
                             {
                                 Console.WriteLine("Please Enter Correct Last Name: ");
                                 obj.LastName = Console.ReadLine();
-                                continue;
                             }
                             foreach (char item in obj.LastName)
                             {
@@ -79,7 +77,6 @@ namespace HospitalManagementSystem.UI
                             {
                                 Console.WriteLine("Please Enter Correct Format: ");
                                 obj.Gender = Console.ReadLine();
-                                continue;
                             }
                             foreach (char item in obj.Gender)
                             {
@@ -101,7 +98,6 @@ namespace HospitalManagementSystem.UI
                             {
                                 Console.WriteLine("Please Enter Correct Address: ");
                                 obj.Address = Console.ReadLine();
-                                continue;
                             }
                             foreach (char item in obj.Address)
                             {
@@ -133,7 +129,6 @@ namespace HospitalManagementSystem.UI
                             {
                                 Console.WriteLine("Please Enter Correct Speciality: ");
                                 obj.SpecialityToBeConsulted = Console.ReadLine();
-                                continue;
                             }
                             foreach (char item in obj.SpecialityToBeConsulted)
                             {
