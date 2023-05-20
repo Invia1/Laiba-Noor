@@ -9,12 +9,13 @@ namespace Customize_EmployeeApp.BLL
     {
         public void EmployeeDetails()
         {
-            Employee emp = new Employee();
+            Employee emp;
 
             List<Employee> EmpList = new List<Employee>();
             string next;
             do
             {
+            emp = new Employee();
                 Console.WriteLine("Enter Your Name: ");
                 emp.EName = Console.ReadLine();
 
