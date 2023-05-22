@@ -19,6 +19,7 @@ namespace Assignment_7.BLL
         }
         public void UpdateEmployee(int  empId)
         {
+        int count =0;
             try
             {
                 foreach (var emp in empList)
@@ -35,8 +36,12 @@ namespace Assignment_7.BLL
                         emp.EmployeeSalary = Convert.ToDouble(Console.ReadLine());
 
                         Console.WriteLine("Data has been updated succesfully!!");
-                        
+                        count++;
                     }
+                }
+                if(count == 0)
+                {
+                    Console.WriteLine("Invalid Employee Id !!");
                 }
                
             } catch (Exception ex)
@@ -47,6 +52,7 @@ namespace Assignment_7.BLL
 
         public void SearchEmployee(int empID)
         {
+        int count =0;
             try
             {
                 foreach(var emp in empList)
@@ -58,7 +64,13 @@ namespace Assignment_7.BLL
                         Console.WriteLine("Employee Age : " + emp.EmployeeAge);
                         Console.WriteLine("Employee Salary : " + emp.EmployeeSalary);
                         Console.WriteLine("");
+                        count++;
                     }
+                }
+                 if(count == 0)
+                {
+                    Console.WriteLine("Invalid Employee Id !!");
+
                 }
             }
             catch(Exception ex)
@@ -68,6 +80,7 @@ namespace Assignment_7.BLL
         }
         public void DeleteEmployee(int empId)
         {
+        int count =0;
             try
             {
                 foreach(var emp in empList)
@@ -76,7 +89,12 @@ namespace Assignment_7.BLL
                     {
                         empList.Remove(emp);
                         Console.WriteLine("Employee data has been deleted successully!!");
+                        count ++;
                     }
+                }
+                 if(count == 0)
+                {
+                    Console.WriteLine("Invalid Employee Id !!");
                 }
             }
             catch (Exception ex)
